@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light">
+<title>FlashOTG 免责声明 · FlashOTG Android 版</title>
+<style>
+:root {
+  --bg: #f4f6fa;
+  --card: #ffffff;
+  --ink: #1c2434;
+  --muted: #637083;
+  --line: #e3e8f0;
+  --brand: #16456b;
+  --brand-2: #2f7bb5;
+  --accent: #2563eb;
+  --accent-soft: #eaf2ff;
+  --warn-bg: #fff7e8;
+  --warn-border: #f0d9a8;
+  --warn-ink: #7a5b12;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(20, 45, 80, 0.08);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.page { max-width: 900px; margin: 0 auto; padding: 0 18px 48px; }
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.9);
+  backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 10;
+}
+.header-inner {
+  max-width: 900px; margin: 0 auto; padding: 13px 18px;
+  display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+}
+.brand { font-weight: 800; color: var(--brand); letter-spacing: .2px; }
+.brand small { font-weight: 500; color: var(--muted); margin-left: 4px; }
+.nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav a {
+  color: var(--brand); background: var(--accent-soft);
+  border: 1px solid transparent; padding: 6px 10px; border-radius: 999px; font-size: 13px;
+}
+.nav a:hover { border-color: var(--accent); text-decoration: none; }
+.hero { padding: 34px 0 10px; }
+.hero .kicker {
+  display: inline-block; color: var(--brand-2); font-weight: 700;
+  font-size: 13px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 8px;
+}
+.hero h1 { margin: 0; font-size: clamp(26px, 5vw, 38px); line-height: 1.25; }
+.hero p { color: var(--muted); margin: 10px 0 0; max-width: 70ch; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); margin: 16px 0; padding: 22px 24px;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 18px; }
+.grid .card { margin: 0; }
+.grid h3 { margin: 2px 0 6px; }
+.grid p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  display: inline-block; border: 1px solid var(--line); border-radius: 9px;
+  padding: 7px 11px; font-size: 13px; color: var(--ink); background: #fbfcfe;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.doc-card { padding: 26px 28px; }
+.doc-head { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 8px; }
+.doc-head h1 { margin: 0 0 12px; font-size: 28px; line-height: 1.3; }
+.doc-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.meta-pill {
+  border: 1px solid var(--line); background: #f8fafc; border-radius: 999px;
+  padding: 4px 11px; font-size: 12.5px; color: var(--muted);
+}
+.meta-pill b { color: var(--ink); font-weight: 650; }
+.lang-bar { margin: 12px 0 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.lang-bar .tag { font-size: 13px; color: var(--muted); }
+.lang-bar a {
+  font-size: 13px; border: 1px solid var(--line); padding: 4px 10px;
+  border-radius: 999px; color: var(--ink);
+}
+.lang-bar a.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.doc-body { color: #20293a; }
+.doc-body h2 {
+  font-size: 20px; margin: 30px 0 12px; padding: 8px 12px;
+  background: linear-gradient(90deg, var(--accent-soft), rgba(234,242,255,0));
+  border-left: 4px solid var(--accent); border-radius: 6px;
+}
+.doc-body h3 { font-size: 16.5px; margin: 24px 0 10px; color: var(--brand); }
+.doc-body p { margin: 12px 0; }
+.doc-body .indent { margin-left: 8px; padding-left: 14px; border-left: 2px solid var(--line); color: #2c3a50; }
+.doc-body hr { border: none; border-top: 1px dashed var(--line); margin: 26px 0; }
+.doc-body ul.legal-items { list-style: none; margin: 10px 0 12px; padding: 0 0 0 4px; }
+.doc-body ul.legal-items > li { margin: 7px 0; padding-left: 2px; }
+.marker {
+  display: inline-block; min-width: 28px; color: var(--accent); font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+ul.legal-items ul { margin: 5px 0 8px 30px; padding-left: 16px; }
+ul.legal-items ul li { margin: 4px 0; }
+ul.legal-items .continuation { margin: 7px 0 7px 30px; color: #2c3a50; }
+.doc-body .plain-list { margin: 10px 0; padding-left: 24px; }
+.doc-body .plain-list li { margin: 6px 0; }
+.warn-note {
+  background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-ink);
+  border-radius: 10px; padding: 10px 14px; margin: 14px 0; font-size: 14px;
+}
+.note { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); margin-top: 26px; padding-top: 12px; }
+.page-footer { text-align: center; color: var(--muted); font-size: 13px; padding: 22px 0 4px; }
+table.info { width: 100%; border-collapse: collapse; margin-top: 14px; }
+table.info th, table.info td {
+  border: 1px solid var(--line); text-align: left; padding: 8px 11px; font-size: 14px; vertical-align: top;
+}
+table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-weight: 600; }
+@media (max-width: 560px) {
+  .doc-card { padding: 18px 15px; }
+  .card { padding: 18px 15px; }
+  .header-inner { padding: 10px 14px; }
+  table.info th { width: 96px; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">FlashOTG <small>Android 版 · Legal</small></a>
+    <nav class="nav"><a href="user-agreement.html">用户协议</a><a href="privacy-policy.html">隐私政策</a><a href="disclaimer.html">免责声明</a><a href="../index.html">返回目录</a></nav>
+  </div>
+</header>
+<main class="page">
+  <article class="card doc-card">
+    <header class="doc-head">
+      <h1>FlashOTG 免责声明</h1>
+      <div class="doc-meta"><span class="meta-pill"><b>版本：</b> 1.0.0</span><span class="meta-pill"><b>最后更新：</b> 2026年8月17日</span><span class="meta-pill"><b>生效日期：</b> 2026年8月17日</span></div>
+      <div class="lang-bar"><span class="tag">语言</span>
+        <a class="active" href="disclaimer.html" aria-current="page">中文</a>
+        <a href="disclaimer-en.html">English</a>
+      </div>
+    </header>
+    <div class="doc-body">
+<p>声明者：FlashOTG 应用开发者（个人名义，以下简称"声明者"）<br>适用对象：FlashOTG App（以下简称"本工具"）</p>
+<p>重要提示：本工具并非由 Arduboy 官方开发、认可、赞助或与其存在任何关联。Arduboy 是其各自权利持有人的注册商标/产品名称。</p>
+<p>请仔细阅读本免责声明。您下载、安装、使用本工具，即表示您已完全理解并接受本声明的全部条款。若您不接受，请立即停止使用并卸载本工具。</p>
+<hr>
+<h2>一、本工具性质与功能定位</h2>
+<h3>1.1 纯工具型应用：本工具本质上是一个固件烧录与数据工具，其功能包括：</h3><ul class="legal-items"><li><span class="marker">a)</span> ESP 系列芯片的识别、烧录、备份、擦除与串口监视；</li><li><span class="marker">b)</span> 将用户提供的 .hex、.bin 或 .arduboy 文件写入 Arduboy/AVR 的 Flash 或外部闪存芯片；</li><li><span class="marker">c)</span> 从 Arduboy/AVR 读取 EEPROM 或 FX Cart 闪存内容并保存为文件。</li></ul>
+<h3>1.2 零固件托管承诺：声明者郑重承诺，本工具的安装包、本地缓存及运行内存中绝不包含任何可供烧录的固件或应用程序。所有被刷写的固件文件均由用户自行提供。</h3>
+<h3>1.3 文件来源全由用户决定：本工具不审查、不验证、不担保用户所提供的固件文件的合法性、安全性、完整性及兼容性。用户对自己选择刷写的任何文件承担全部责任。</h3>
+<h3>1.4 非官方声明：本工具仅为第三方独立开发者出于学习和社区互助目的开发的辅助工具，任何使用本工具的操作后果均与 Arduboy 官方无关。</h3>
+<h3>1.5 禁止儿童使用：本工具涉及对电子硬件的底层烧录与读写操作，存在电击、短路、过热、设备永久损坏等安全风险。本工具严禁未满 18 周岁的未成年人独立使用。未成年人如需使用，必须在具备相关技术知识及安全意识的成年监护人全程陪同、指导和监督下进行。监护人对其监护下的未成年人使用本工具的一切后果（包括但不限于人身伤害、财产损失、设备损坏）承担全部法律责任。声明者对未成年人使用本工具所造成的任何损害不承担任何责任。</h3>
+<hr>
+<h2>二、硬件操作风险</h2>
+<p>烧录（Flashing）、备份/导出和擦除操作涉及对 ESP 或 Arduboy/AVR 硬件底层存储的直接读写。您必须清醒认识到以下无法规避的硬件风险，声明者对此概不负责：</p>
+<h3>2.1 设备永久性损坏（变砖）风险：</h3><ul class="legal-items"><li><span class="marker">a)</span> 错误的固件匹配（如将非 FX 固件刷入 FX 型号，或反之）、供电不稳定、刷写过程中 USB 断开、选错刷写地址或文件大小超出设备容量，可能导致 Arduboy 永久性无法启动（变砖）；</li><li><span class="marker">b)</span> 部分变砖情况可能需要 ISP 编程器（如 AVR-ISP）通过 ICSP 引脚才能恢复，且恢复不一定成功。</li></ul>
+<h3>2.2 引导程序（Bootloader）损坏风险：</h3><ul class="legal-items"><li><span class="marker">a)</span> 刷写错误的固件可能覆盖或损坏 Arduboy 的引导程序，导致设备无法通过正常方式进入烧录模式。</li></ul>
+<h3>2.3 外部闪存芯片（FX Cart）损坏风险：</h3><ul class="legal-items"><li><span class="marker">a)</span> 错误的 BIN 文件格式或写入地址可能损坏外部闪存芯片中的数据分区，导致游戏合集（Cart）无法识别或永久丢失；</li><li><span class="marker">b)</span> SPI Flash 芯片具有有限的擦写寿命（通常约 10 万次），频繁刷写可能加速芯片老化。</li></ul>
+<h3>2.4 导出操作的数据风险：</h3><ul class="legal-items"><li><span class="marker">a)</span> 从设备导出固件或 EEPROM 时，因通信错误、设备断电或权限问题，可能导致导出的 BIN 文件不完整或数据损坏；</li><li><span class="marker">b)</span> 声明者不保证导出的 BIN 文件可用于成功恢复设备。</li></ul>
+<h3>2.5 外围硬件与芯片兼容性风险：</h3><ul class="legal-items"><li><span class="marker">a)</span> ESP 系列芯片存在多种型号、Flash 容量、供电与自动复位电路差异，错误的偏移、波特率、SPI 参数或断电可能导致芯片无法启动；</li><li><span class="marker">b)</span> 本工具的 Arduboy/AVR 功能主要针对官方 Arduboy 及 Arduboy FX 设计。对于 DIY 自制 Arduboy（如使用 Pro Micro、SH1106 屏幕等），因硬件差异可能导致刷写失败或设备损坏。用户需自行确认兼容性。</li></ul>
+<hr>
+<h2>三、固件来源与知识产权</h2>
+<h3>3.1 用户需自行确保所使用的固件来源合法、遵守相应的开源许可证条款（如 GPL、MIT、Apache 2.0 等），且不侵犯任何第三方的著作权、商标权或其他合法权益。</h3>
+<h3>3.2 若本工具内嵌了指向第三方网站的跳转链接，声明者仅提供链接服务，不对链接指向的固件内容承担审查、担保或连带责任。</h3>
+<h3>3.3 用户从自己的 Arduboy 设备导出的 BIN 文件，其内容版权归属于该设备中原有固件的权利人。用户仅可将导出文件用于个人备份或学习研究，不得用于商业分发或侵权用途。</h3>
+<hr>
+<h2>四、用户安全建议</h2>
+<h3>4.1 强烈建议在刷写前使用本工具的"导出/备份"功能完整备份设备当前内容。</h3>
+<h3>4.2 强烈建议在刷写前核对固件文件的哈希值（SHA-256/MD5）是否与官方发布值一致。</h3>
+<h3>4.3 刷写过程中请确保移动设备电量充足，USB 连接稳定，避免在刷写过程中插拔数据线或关闭 App。</h3>
+<hr>
+<h2>五、隐私与数据</h2>
+<h3>5.1 本工具不收集、不上传任何个人身份信息（PII）或固件文件内容。为支持本地功能，ESP 设备 MAC 地址与烧录方案、语言偏好、同意状态及运行日志可能仅保存在您的设备本地，用于设备识别与故障排查；它们不会上传至任何服务器。您可以通过清空日志或卸载本工具删除这些本地数据。</h3>
+<hr>
+<h2>六、责任限制</h2>
+<h3>6.1 "按现状"提供：本工具按"现状"（AS-IS）和"当前可用"（AS-AVAILABLE）的基础提供。声明者不作任何明示或暗示的担保，包括但不限于适用于特定用途的担保、不中断或不出错的担保。</h3>
+<h3>6.2 最大赔偿限额：在任何情况下，声明者均不对以下损失承担责任：</h3><ul class="legal-items"><li><span class="marker">a)</span> 设备永久性损坏（变砖）或硬件损毁；</li><li><span class="marker">b)</span> 数据丢失（包括游戏进度、EEPROM 保存数据等）；</li><li><span class="marker">c)</span> 利润损失、业务中断或任何间接、附带损失。</li></ul><p class="indent">若本工具导致您产生损失，赔偿上限不超过您为本工具支付的购买费用（本工具为免费软件，赔偿上限为零）。</p>
+<h3>6.3 用户承担最终责任：每一次点击"刷写"或"导出"按钮，都代表您本人完全知悉并自愿承担所有操作风险。您对您的硬件和您的行为负全部责任。</h3>
+<hr>
+<h2>七、最终解释权</h2>
+<h3>7.1 本声明的最终解释权归声明者所有。该条款旨在为模糊或争议情况提供清晰指导，确保声明内容得到公正实施，并非单方面施加不合理的权利。</h3>
+<hr>
+<p>特别提示：本工具是一款社区驱动的免费工具，旨在为 Arduboy 爱好者的学习与研究提供便利。探索伴随风险，每一次烧录，都是您作为创客的自主选择。</p>
+<p>声明者：FlashOTG 应用开发者<br>联系方式：<a href="mailto:flashotg@foxmail.com">flashotg@foxmail.com</a><br>发布日期：2026年8月1日</p>
+    </div>
+  </article>
+</main>
+<footer class="page-footer">
+  FlashOTG · Android 版 · FlashOTG 免责声明<br>
+  <a href="mailto:flashotg@foxmail.com">flashotg@foxmail.com</a>
+</footer>
+</body>
+</html>
