@@ -142,7 +142,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
   <article class="card doc-card">
     <header class="doc-head">
       <h1>FlashOTG 用户协议</h1>
-      <div class="doc-meta"><span class="meta-pill"><b>版本：</b> 1.0.0</span><span class="meta-pill"><b>最后更新：</b> 2026年8月17日</span><span class="meta-pill"><b>生效日期：</b> 2026年8月17日</span></div>
+      <div class="doc-meta"><span class="meta-pill"><b>版本：</b> 1.0.3</span><span class="meta-pill"><b>最后更新：</b> 2026年10月19日</span><span class="meta-pill"><b>生效日期：</b> 2026年10月19日</span></div>
       <div class="lang-bar"><span class="tag">语言</span>
         <a class="active" href="user-agreement.html" aria-current="page">中文</a>
         <a href="user-agreement-en.html">English</a>
@@ -160,9 +160,10 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <hr>
 <h2>二、软件功能</h2>
 <h3>2.1 本软件是一款纯工具型应用，不内置、不托管、不分发任何固件（.hex / .bin / .arduboy）或应用程序文件。其主要功能包括：</h3>
-<ul class="legal-items"><li><span class="marker">a)</span> ESP 系列芯片：通过 USB 串口识别、烧录、备份、整片擦除与串口监视；</li></ul>
+<ul class="legal-items"><li><span class="marker">a)</span> ESP 系列芯片：通过 USB 识别与固件刷写（添加 .bin 文件、设置写入偏移、校验）；</li></ul>
 <ul class="legal-items"><li><span class="marker">b)</span> Arduboy/AVR：烧录与校验 HEX、读写 EEPROM、管理 FX Cart（备份/烧录/扫描/编辑器）、解析与构建 .arduboy 包；</li></ul>
 <ul class="legal-items"><li><span class="marker">c)</span> 显示 Arduboy 固件社区资源链接文本（仅复制链接，不托管任何文件）。</li></ul>
+<ul class="legal-items"><li><span class="marker">d)</span> 设备屏幕播放与图像转换：在手机本地解码您主动选择的视频/图片文件，转换为 128×64 单色帧并通过 USB 发送到已连接的设备；本软件不托管、不上传任何媒体文件。</li></ul>
 <h3>2.2 所有被烧录的固件文件均由您自行提供（包括从本地存储选择、从第三方网站下载或通过 App 内嵌的链接跳转获取）。本软件不对固件文件的来源、内容、合法性、安全性或兼容性进行任何形式的审查、验证或担保。</h3>
 <hr>
 <h2>三、使用许可</h2>
@@ -177,7 +178,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <hr>
 <h2>五、权限说明</h2>
 <h3>5.1 本软件在运行过程中需要申请以下系统权限：</h3>
-<ul class="legal-items"><li><span class="marker">a)</span> USB 设备访问权限：用于与 ESP 或 Arduboy/AVR 设备建立串口通信，执行识别、烧录、备份、校验或监视操作；</li><li><span class="marker">b)</span> 文件访问（系统文件选择器 Storage Access Framework）：用于从设备存储中选择 HEX、BIN、.arduboy 等固件文件，或将备份/导出数据保存到您指定的位置。</li></ul>
+<ul class="legal-items"><li><span class="marker">a)</span> USB 设备访问权限：用于与 ESP 或 Arduboy/AVR 设备建立串口通信，执行识别、烧录、备份、校验、设备状态显示或设备屏幕播放等操作；</li><li><span class="marker">b)</span> 文件访问（系统文件选择器 Storage Access Framework）：用于从设备存储中选择 HEX、BIN、.arduboy 等固件文件或待播放的视频/图片文件，或将备份/导出数据、帧序列文件保存到您指定的位置。</li></ul>
 <h3>5.2 您授予的所有权限仅用于本软件的正常功能运行，不会被用于任何其他目的。您可以随时在系统设置中撤销已授予的权限，但撤销后本软件的部分功能可能无法正常使用。</h3>
 <hr>
 <h2>六、终止与更新</h2>

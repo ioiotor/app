@@ -142,7 +142,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
   <article class="card doc-card">
     <header class="doc-head">
       <h1>FlashOTG Disclaimer</h1>
-      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.0</span><span class="meta-pill"><b>Last Updated:</b> August 17, 2026</span><span class="meta-pill"><b>Effective Date:</b> August 17, 2026</span></div>
+      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.3</span><span class="meta-pill"><b>Last Updated:</b> October 19, 2026</span><span class="meta-pill"><b>Effective Date:</b> October 19, 2026</span></div>
       <div class="lang-bar"><span class="tag">Language</span>
         <a class="active" href="disclaimer-en.html" aria-current="page">English</a>
         <a href="disclaimer.html">中文</a>
@@ -154,14 +154,14 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <p>PLEASE READ THIS DISCLAIMER CAREFULLY. By downloading, installing, or using the Tool, you acknowledge that you have fully understood and accepted all terms of this disclaimer. If you do not agree, immediately cease use and uninstall the Tool.</p>
 <hr>
 <h2>I. Nature of the Tool &amp; Functional Positioning</h2>
-<h3>1.1 Pure Utility Tool: The Tool is a firmware flashing and data utility whose functions include:</h3><ul class="legal-items"><li><span class="marker">a)</span> Identification, flashing, backup, erase, and serial monitoring for ESP series chips;</li><li><span class="marker">b)</span> Writing user-provided .hex, .bin, or .arduboy files to Arduboy/AVR's Flash or external flash chip;</li><li><span class="marker">c)</span> Reading EEPROM or FX Cart flash content from Arduboy/AVR and saving it as files.</li></ul>
+<h3>1.1 Pure Utility Tool: The Tool is a firmware flashing and data utility whose functions include:</h3><ul class="legal-items"><li><span class="marker">a)</span> Identification and firmware flashing for ESP series chips (adding .bin files, setting write offsets, verification);</li><li><span class="marker">b)</span> Writing user-provided .hex, .bin, or .arduboy files to Arduboy/AVR's Flash or external flash chip;</li><li><span class="marker">c)</span> Reading EEPROM or FX Cart flash content from Arduboy/AVR and saving it as files;</li><li><span class="marker">d)</span> Device screen playback and image conversion: decoding video/image files that users explicitly select locally on the phone, converting them into 128×64 monochrome frames, and sending the frames to the connected device over USB; the Tool does not host or upload any media files.</li></ul>
 <h3>1.2 Zero Firmware Hosting Commitment: The Declarant warrants that the Tool's installation package, local cache, and runtime memory contain absolutely no flashable firmware or applications. All firmware files to be flashed are provided solely by the user.</h3>
 <h3>1.3 File Sources Are Entirely User-Determined: The Tool does not review, verify, or warrant the legality, security, integrity, or compatibility of any firmware files provided by the user. Users bear full responsibility for any files they choose to flash.</h3>
 <h3>1.4 Non-Affiliation Statement: The Tool is a third-party utility developed independently for study and community assistance purposes. Any consequences arising from the use of this Tool are unrelated to Arduboy official.</h3>
 <h3>1.5 Prohibition on Use by Minors: The Tool involves low-level hardware flashing, reading, and writing operations that pose safety risks including electric shock, short circuit, overheating, and permanent device damage. Minors under the age of 18 are strictly prohibited from using the Tool independently. If a minor needs to use the Tool, it must be done under the full-time accompaniment, guidance, and supervision of an adult guardian who possesses relevant technical knowledge and safety awareness. The guardian shall bear full legal responsibility for all consequences arising from the minor's use of the Tool (including but not limited to personal injury, property damage, and equipment damage). The Declarant assumes no liability for any damages caused by the use of the Tool by minors.</h3>
 <hr>
 <h2>II. Hardware Operation Risks</h2>
-<p>Flashing, backup/export, and erase operations involve direct reading and writing to ESP or Arduboy/AVR hardware. You must acknowledge the following unavoidable hardware risks, for which the Declarant assumes NO liability:</p>
+<p>Flashing and backup/export operations involve direct reading and writing to ESP or Arduboy/AVR hardware. You must acknowledge the following unavoidable hardware risks, for which the Declarant assumes NO liability:</p>
 <h3>2.1 Permanent Bricking Risk:</h3><ul class="legal-items"><li><span class="marker">a)</span> Incorrect firmware matching (e.g., flashing non-FX firmware to an FX model, or vice versa), unstable power supply, USB disconnection during flashing, incorrect write addresses, or file sizes exceeding device capacity may cause the Arduboy to become permanently unbootable (bricked);</li><li><span class="marker">b)</span> Some bricking scenarios may require an ISP programmer (e.g., AVR-ISP) via ICSP pins for recovery, and recovery is not guaranteed.</li></ul>
 <h3>2.2 Bootloader Corruption Risk:</h3><ul class="legal-items"><li><span class="marker">a)</span> Flashing incorrect firmware may overwrite or corrupt the Arduboy's bootloader, preventing the device from entering flashing mode properly.</li></ul>
 <h3>2.3 External Flash Chip (FX Cart) Damage Risk:</h3><ul class="legal-items"><li><span class="marker">a)</span> Incorrect BIN file formats or write addresses may corrupt data partitions on the external flash chip, causing the game cart to become unrecognizable or permanently lost;</li><li><span class="marker">b)</span> SPI Flash chips have limited write endurance (typically ~100,000 cycles). Frequent flashing may accelerate chip wear.</li></ul>
@@ -179,7 +179,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <h3>4.3 During flashing, ensure your mobile device has sufficient battery power and a stable USB connection. Avoid unplugging the cable or closing the Tool during the flashing process.</h3>
 <hr>
 <h2>V. Privacy &amp; Data</h2>
-<h3>5.1 The Tool does NOT collect or upload any personally identifiable information (PII) or firmware file contents. To support local features, ESP device MAC addresses and flash plans, language preferences, consent status, and runtime logs may be stored only on your device for device identification and troubleshooting; they are never uploaded to any server. You can delete these local data by clearing logs or uninstalling the Tool.</h3>
+<h3>5.1 The Tool does NOT collect or upload any personally identifiable information (PII), firmware file contents, or media file contents. To support local features, language/theme/app-mode preferences, legal-terms consent status, a simple-mode image copy, and runtime logs may be stored only on your device for functional operation and troubleshooting; they are never uploaded to any server. You can delete these local data by clearing logs or uninstalling the Tool. Video/image files you explicitly select for device screen playback/image conversion are decoded locally only and are never uploaded or shared.</h3>
 <hr>
 <h2>VI. Limitation of Liability</h2>
 <h3>6.1 "AS-IS" Provision: The Tool is provided on an "AS-IS" and "AS-AVAILABLE" basis. The Declarant makes no express or implied warranties, including but not limited to warranties of fitness for a particular purpose, non-interruption, or error-free operation.</h3>
@@ -190,7 +190,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <h3>7.1 The final right to interpret this disclaimer rests with the Declarant. This clause serves to provide clear guidance in ambiguities and ensure fair implementation, and is not intended to impose unilateral or unreasonable terms.</h3>
 <hr>
 <p>Final Notice: This Tool is a community-driven free tool designed to facilitate study and research for Arduboy enthusiasts. Exploration comes with risks. Every flash is your own choice as a maker.</p>
-<p>Declarant: FlashOTG App Developer<br>Contact: <a href="mailto:flashotg@foxmail.com">flashotg@foxmail.com</a><br>Publication Date: August 1, 2026</p>
+<p>Declarant: FlashOTG App Developer<br>Contact: <a href="mailto:flashotg@foxmail.com">flashotg@foxmail.com</a><br>Publication Date: October 19, 2026</p>
     </div>
   </article>
 </main>

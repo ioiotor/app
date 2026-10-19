@@ -142,7 +142,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
   <article class="card doc-card">
     <header class="doc-head">
       <h1>FlashOTG Terms of Service</h1>
-      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.0</span><span class="meta-pill"><b>Last Updated:</b> August 17, 2026</span><span class="meta-pill"><b>Effective Date:</b> August 17, 2026</span></div>
+      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.3</span><span class="meta-pill"><b>Last Updated:</b> October 19, 2026</span><span class="meta-pill"><b>Effective Date:</b> October 19, 2026</span></div>
       <div class="lang-bar"><span class="tag">Language</span>
         <a class="active" href="user-agreement-en.html" aria-current="page">English</a>
         <a href="user-agreement.html">中文</a>
@@ -160,9 +160,10 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <hr>
 <h2>II. Software Functionality</h2>
 <h3>2.1 The Software is a pure utility application. It does NOT embed, host, or distribute any firmware (.hex / .bin / .arduboy) or application files. Its primary functions include:</h3>
-<ul class="legal-items"><li><span class="marker">a)</span> ESP series chips: identification, flashing, backup, full erase, and serial monitoring over USB;</li></ul>
+<ul class="legal-items"><li><span class="marker">a)</span> ESP series chips: identification and firmware flashing over USB (adding .bin files, setting write offsets, verification);</li></ul>
 <ul class="legal-items"><li><span class="marker">b)</span> Arduboy/AVR: HEX flashing and verification, EEPROM read/write, FX Cart management (backup/flash/scan/editor), and .arduboy package parsing/building;</li></ul>
 <ul class="legal-items"><li><span class="marker">c)</span> Displaying Arduboy firmware community resource link text (copy only; no file hosting).</li></ul>
+<ul class="legal-items"><li><span class="marker">d)</span> Device screen playback and image conversion: decoding video/image files you explicitly select locally on the phone, converting them into 128×64 monochrome frames, and sending the frames to the connected device over USB; the Software does not host or upload any media files.</li></ul>
 <h3>2.2 All firmware files to be flashed are provided solely by you (whether selected from local storage, downloaded from third-party websites, or accessed via links within the App). The Software does not review, verify, or warrant the source, content, legality, security, or compatibility of any firmware files.</h3>
 <hr>
 <h2>III. License Grant</h2>
@@ -177,7 +178,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <hr>
 <h2>V. Permissions</h2>
 <h3>5.1 The Software requires the following system permissions during operation:</h3>
-<ul class="legal-items"><li><span class="marker">a)</span> USB Device Access: To establish serial communication with ESP or Arduboy/AVR devices for identification, flashing, backup, verification, or monitoring operations;</li><li><span class="marker">b)</span> File Access (Storage Access Framework): To select HEX, BIN, .arduboy, and other firmware files from device storage, or to save backups/exports to a location you choose.</li></ul>
+<ul class="legal-items"><li><span class="marker">a)</span> USB Device Access: To establish serial communication with ESP or Arduboy/AVR devices for identification, flashing, backup, verification, device status display, or device screen playback operations;</li><li><span class="marker">b)</span> File Access (Storage Access Framework): To select HEX, BIN, .arduboy, and other firmware files, or video/image files to play, from device storage, or to save backups/exports/frame-sequence files to a location you choose.</li></ul>
 <h3>5.2 All permissions you grant are used solely for the Software's normal functional operation and will not be used for any other purposes. You may revoke granted permissions at any time in system settings; however, some features of the Software may not function properly after revocation.</h3>
 <hr>
 <h2>VI. Termination and Updates</h2>
