@@ -142,7 +142,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
   <article class="card doc-card">
     <header class="doc-head">
       <h1>FlashOTG Privacy Policy</h1>
-      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.3</span><span class="meta-pill"><b>Last Updated:</b> October 19, 2026</span><span class="meta-pill"><b>Effective Date:</b> October 19, 2026</span></div>
+      <div class="doc-meta"><span class="meta-pill"><b>Version:</b> 1.0.4</span><span class="meta-pill"><b>Last Updated:</b> October 20, 2026</span><span class="meta-pill"><b>Effective Date:</b> October 20, 2026</span></div>
       <div class="lang-bar"><span class="tag">Language</span>
         <a class="active" href="privacy-policy-en.html" aria-current="page">English</a>
         <a href="privacy-policy.html">中文</a>
@@ -151,7 +151,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
     <div class="doc-body">
 <p>This Privacy Policy ("this Policy") explains how FlashOTG (hereinafter "the Software" or "we") collects, uses, and protects your personal information.</p>
 <p>We deeply understand the importance of personal information to you and will treat it with the utmost prudence. Please carefully read and fully understand this Policy.</p>
-<p>IMPORTANT NOTICE: The Software is an offline utility application for local USB flashing of ESP32/ESP8266 series chips and Arduboy/AVR devices. It also supports converting video/image files you explicitly select on your phone into 128×64 monochrome frames and playing them on a connected Arduboy device's screen. It does NOT connect to the network or upload any of your information; it only stores preferences, legal-terms consent status, a simple-mode image copy, and runtime logs locally on your device.</p>
+<p>IMPORTANT NOTICE: The Software is an offline utility application for local USB flashing of ESP32/ESP8266 series chips and Arduboy/AVR devices. It also supports converting video/image files you explicitly select on your phone into 128×64 monochrome frames and playing them on a connected Arduboy device's screen. It does NOT connect to the network or upload any of your information, and does NOT read or collect your clipboard information; it only stores preferences, legal-terms consent status, a simple-mode image copy, and runtime logs locally on your device.</p>
 <hr>
 <h2>I. Information We DO NOT Collect</h2>
 <p>The Software is a purely local firmware flashing utility. We do NOT collect or upload any of the following information from you:</p>
@@ -162,6 +162,7 @@ table.info th { width: 130px; background: #f8fafc; color: var(--muted); font-wei
 <h3>1.5 Firmware Content: Any firmware files (.hex / .bin / .arduboy / BIN) and their contents that you read, flash, or export remain exclusively on your local device. The Software does not read, copy, upload, or share the contents of these files.</h3>
 <h3>1.6 Device Information: Hardware identification information such as the chip ID or MAC address of connected Arduboy/AVR or ESP devices is used only for local device identification during the current connection session; some hardware identifiers may appear in runtime logs for troubleshooting, but they are not separately stored or uploaded to any server. You can clear all local data by uninstalling the Software.</h3>
 <h3>1.7 Video and Image Files: Local video/image files you explicitly select for "Device Screen Playback" or "Image Tool" are decoded and converted only on your device, and the converted frame data is sent only over USB to your connected device; the Software does not read, copy, upload, or share the contents of these files. Frame-sequence files exported to the location you choose are stored only on your local device.</h3>
+<h3>1.8 Clipboard Information: The Software does not read, write, or collect your clipboard information. The "Share log / Share link" features use the Android system share sheet (ACTION_SEND) and let you choose the target app; the Software does not access the clipboard or upload clipboard contents.</h3>
 <hr>
 <h2>II. Permission Usage</h2>
 <h3>2.1 To provide services properly, the Software may request the following system permissions, but their use is strictly limited to specific functional scenarios:</h3>
